@@ -32,15 +32,16 @@ function global:Prompt {
 New-Alias source_up Search-DirEnvRC -Force
 
 ## Exports ####################################################################
-Export-ModuleMember `
-    -Function `
-        Set-DirEnvRc, `
-        Edit-DirEnvRc, `
-        New-DirEnvRc, `
-        Initialize-AllowList, `
-        Compare-DirEnvRc, `
-        Approve-DirEnvRc, `
-        Deny-DirEnvRc, `
-        Repair-DirEnvAuth, `
-        Prompt
+Export-ModuleMember
+    -Function @(
+        'Set-DirEnvRc'
+        'Edit-DirEnvRc'
+        'New-DirEnvRc'
+        'Initialize-AllowList'
+        'Compare-DirEnvRc'
+        'Approve-DirEnvRc'
+        'Deny-DirEnvRc'
+        'Repair-DirEnvAuth'
+        'Prompt'
+)
 
